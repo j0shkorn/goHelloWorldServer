@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_goHelloWorldServer_1698212048970-push-trigger-input-set
+  identifier: Build_goHelloWorldServer_1698212048970pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: CI_k8s_project
+  pipeline:
+    identifier: Build_goHelloWorldServer_1698212048970
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
