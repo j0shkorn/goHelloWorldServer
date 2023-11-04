@@ -42,6 +42,13 @@ pipeline:
                       tags: latest
                   timeout: ""
                   type: Plugin
+              - step:
+                  type: Run
+                  identifier: dependencies
+                  name: Dependencies
+                  spec:
+                    shell: Sh
+                    command: npm install express@4.18.2 --no-save
           platform:
             arch: Amd64
             os: Linux
